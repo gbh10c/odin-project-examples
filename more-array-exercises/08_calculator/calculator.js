@@ -15,6 +15,9 @@ const sum = function(array) {
   }
   return sumResult;
 };
+/*const sum = function(array) {
+  return array.reduce((total, current) => total + current, 0);
+};*/
 
 const multiply = function(array) {
   let multiplyResult = 1;
@@ -23,11 +26,19 @@ const multiply = function(array) {
   }
   return multiplyResult;
 };
+/*const multiply = function(array) {
+  return array.length
+    ? array.reduce((accumulator, nextItem) => accumulator * nextItem)
+    : 0;
+};*/
 
 const power = function(x, y) {
 	let powerResult = x ** y;
   return powerResult;
 };
+/*const power = function(a, b) {
+  return Math.pow(a, b);
+};*/
 
 const factorial = function(x) {
 	let factorialResult = 1;
@@ -36,6 +47,13 @@ const factorial = function(x) {
   }
   return factorialResult;
 };
+/*const recursiveFactorial = function(n) {
+  if (n === 0) {
+    return 1;
+  }
+  return n * recursiveFactorial (n-1);
+};*/
+
 
 // Do not edit below this line
 module.exports = {
